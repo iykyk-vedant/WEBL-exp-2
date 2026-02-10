@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.traffic-light-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.traffic-light {
+    width: 150px;
+    height: 350px;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #555; /* Default dim color */
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.light.active.red {
+    background-color: #ff5252; /* Bright red when active */
+    box-shadow: 0 0 20px #ff5252;
+}
+
+.light.active.yellow {
+    background-color: #ffff00; /* Bright yellow when active */
+    box-shadow: 0 0 20px #ffff00;
+}
+
+.light.active.green {
+    background-color: #4caf50; /* Bright green when active */
+    box-shadow: 0 0 20px #4caf50;
+}
+
+.change-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.change-button:hover {
+    background-color: #1976d2;
+}
